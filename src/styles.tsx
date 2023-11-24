@@ -1,9 +1,38 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  container: {
-    height: '100%',
+  self: {
+    width: 52,
+    height: 52,
+    backgroundColor: '#1A73EB',
+    position: 'absolute',
+    zIndex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 2,
+  },
+  view: {
     width: '100%',
-    backgroundColor: 'blue',
+    height: 52,
+    backgroundColor: '#03318C',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    paddingHorizontal: 16,
+    borderRadius: 2,
+  },
+  complete: {
+    fontSize: 17,
+    fontWeight: '700',
+    color: '#FFF',
+    position: 'absolute',
+    left: 16,
+  },
+  pending: {
+    fontSize: 17,
+    fontWeight: '700',
+    color: '#FFF',
+    position: 'absolute',
+    right: 16,
   },
 });
