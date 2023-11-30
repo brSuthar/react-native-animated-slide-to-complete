@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 import type { ViewStyle, TextStyle } from 'react-native';
 
-export interface ISlideToCompleteButton {
+export interface SlideProps {
   info?: string;
   ref?: any;
   SelfView?: ReactElement;
@@ -18,4 +18,8 @@ type ContextType = { [K: string]: unknown };
 
 export interface IContext extends ContextType {
   activity: boolean;
+}
+
+export interface SlideRef {
+  reset: () => void;
 }

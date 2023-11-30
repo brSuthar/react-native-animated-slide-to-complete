@@ -1,9 +1,9 @@
 import React, {
-  type FC,
   forwardRef,
   useImperativeHandle,
   useMemo,
   useState,
+  memo,
 } from 'react';
 import Animated, {
   useAnimatedGestureHandler,
@@ -19,12 +19,12 @@ import {
 } from 'react-native-gesture-handler';
 import { type LayoutChangeEvent } from 'react-native';
 
-import { type IContext, type ISlideToCompleteButton } from './types';
+import { type IContext, type SlideProps, type SlideRef } from './types';
 import { styles } from './styles';
 import SelfThumb from './self-custom-view';
 
-const SlideToCompleteButton: FC<ISlideToCompleteButton> = forwardRef(
-  (props: ISlideToCompleteButton, ref: any) => {
+const SlideToCompleteButton = forwardRef<SlideRef, SlideProps>(
+  (props: SlideProps, ref: React.ForwardedRef<SlideRef>) => {
     const {
       SelfView,
       startTitle,
@@ -53,7 +53,7 @@ const SlideToCompleteButton: FC<ISlideToCompleteButton> = forwardRef(
 
     useImperativeHandle(ref, () => {
       return {
-        resetSlide: resetSlide,
+        reset: resetSlide,
       };
     });
 
@@ -66,7 +66,7 @@ const SlideToCompleteButton: FC<ISlideToCompleteButton> = forwardRef(
       setSelf({ width: value, height });
     };
 
-    const resetSlide = () => {
+    const resetSlide: SlideRef['reset'] = () => {
       transX.value = withTiming(0, { duration: 700 });
       completeOpacity.value = withTiming(0, { duration: 800 });
     };
@@ -162,4 +162,4 @@ SlideToCompleteButton.defaultProps = {
   isReset: false,
 };
 
-export default SlideToCompleteButton;
+export default memo(SlideToCompleteButton);

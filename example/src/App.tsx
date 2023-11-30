@@ -10,10 +10,10 @@ import {
 import SlideToCompleteButton from 'react-native-animated-slide-to-complete';
 
 export default function App() {
-  const slideRef = React.useRef();
+  const slideRef = React.useRef<SlideToCompleteButton>();
 
   const onResetClick = () => {
-    slideRef.current.resetSlide();
+    slideRef.current.reset();
   };
 
   return (
@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#010B40',
   },
   gestureView: {
     flex: 1,
