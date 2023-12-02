@@ -53,6 +53,27 @@ const styles = StyleSheet.create({
 });
 ```
 
+## Properties
+
+| Props | type | Description |
+| ---------| ------- | ------------- |
+| `style` | ViewStyle | It's a prop for arranging and styling button layouts. | 
+| `SelfView` | ReactElement | It allows you to create a custom appearance for the sliding button's thumb view. |
+| `selfStyle` | ViewStyle | It's a prop employed to customize the appearance of the thumb view; otherwise, the default style will be applied. |
+| `startTitle` | String | Specify a `text` to appear on the left side when sliding the thumb to the right. |
+| `endTitle` | String | Specify a `text` to appear on the right side when sliding the thumb to the left. |
+| `startStyle` | TextStyle | Apply a style to the `startTitle`. |
+| `endStyle` | TextStyle | Apply a style to the `endTitle`. |
+| `isReset` | Boolean | Setting to `true` resets the thumb when sliding to the end of the button. |
+
+## Methods
+
+| Name | Description |
+| --------- | ------------- |
+| `reset` | Invoke method to reset thumb appearance, returning to default state. |
+
+
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.

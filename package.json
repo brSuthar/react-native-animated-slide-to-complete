@@ -1,7 +1,7 @@
 {
   "name": "react-native-animated-slide-to-complete",
-  "version": "0.1.0",
-  "description": "this is a react native component for slide to complete button. and this component is totally build with react native reanimated package. this package is easy to modify and easy to use.",
+  "version": "1.0.0",
+  "description": "This React Native component is designed for a slide-to-complete button, exclusively built using the React Native Reanimated package. It's user-friendly, making modifications and usage straightforward.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
