@@ -22,20 +22,12 @@ But also we need to install [react-native-reanimated](https://docs.swmansion.com
 ## Usage
 
 ```js
-import * as React from 'react';
 
-import {
-  StatusBar,
-  StyleSheet,
-  View,
-} from 'react-native';
-import SlideToCompleteButton from 'react-native-animated-slide-to-complete';
+\\...
 
 export default function App() {
-
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={'light-content'} />
       <SlideToCompleteButton style={styles.animated} />
     </View>
   );
