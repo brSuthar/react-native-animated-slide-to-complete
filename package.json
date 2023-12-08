@@ -37,7 +37,16 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android", 
+    "slide",
+    "button",
+    "react",
+    "to-complete",
+    "slide-to-complete",
+    "overlay",
+    "animated",
+    "slider",
+    "animation"
   ],
   "repository": "https://github.com/brSuthar/react-native-animated-slide-to-complete.git",
   "author": "br_suthar <br.bhomaram83@gmail.com> (https://github.com/brSuthar/react-native-animated-slide-to-complete.git)",
