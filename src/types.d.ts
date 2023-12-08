@@ -12,6 +12,7 @@ export interface SlideProps {
   style?: ViewStyle;
   selfStyle?: ViewStyle;
   isReset?: Boolean;
+  allowGestureOutside?: Boolean;
 }
 
 type ContextType = { [K: string]: unknown };
