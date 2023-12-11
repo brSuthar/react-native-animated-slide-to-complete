@@ -7,7 +7,10 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { SlideToCompleteButton, OverlayToComplete } from 'react-native-animated-slide-to-complete';
+import {
+  SlideToCompleteButton,
+  OverlayToComplete,
+} from 'react-native-animated-slide-to-complete';
 
 export default function App() {
   const slideRef = React.useRef<SlideToCompleteButton>();
@@ -27,7 +30,7 @@ export default function App() {
 
       <View style={styles.seprator} />
 
-      <OverlayToComplete />
+      <OverlayToComplete style={styles.animated} />
     </View>
   );
 }
@@ -63,5 +66,5 @@ const styles = StyleSheet.create({
     height: 1,
     width: '100%',
     backgroundColor: '#1A73EB',
-  }
+  },
 });

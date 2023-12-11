@@ -29,6 +29,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <SlideToCompleteButton style={styles.animated} />
+      <OverlayToComplete style={styles.animated} />
     </View>
   );
 }
